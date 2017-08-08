@@ -1,0 +1,53 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="stylesheets/editor.css">
+</head>
+<body>
+	<script src="scripts/editor.js"></script>
+	<div id="whole-container">
+		<div class="editor-header">
+		</div>
+		<div class="editor-body">
+			<ul class="left-navigator" id="left-navigator">
+				<li class="lnav-top-shadow"></li>
+				<li class="main-card" id="main-card">
+					<div class="card" id="input-card">
+						<p class="card-number" id="input-card-number">1</p>
+						<textarea class="input-text" id="input-text"></textarea>
+					</div>
+				</li>
+				<li class="main-card-padding"></li>
+				<li class="left-navigator-button" id="newCard-btn" onClick="addNewCard()">
+					<h5 class="lnav-btn-content">Add Card</h5>
+				</li>
+				<li class="left-navigator-button" id="editCard-btn">
+					<h5 class="lnav-btn-content">Edit Card</h5>
+				</li>
+				<li class="left-navigator-button" id="delCard-btn">
+					<h5 class="lnav-btn-content">Delete Cards</h5>
+				</li>
+				<li class="left-navigator-button" id="fontType-btn">
+					<h5 class="lnav-btn-content">Font Types</h5>
+				</li>
+				<li class="left-navigator-button" id="fontColor-btn">
+					<h5 class="lnav-btn-content">Font Colors</h5>
+				</li>
+				<li class="left-navigator-button" id="cardColor-btn">
+					<h5 class="lnav-btn-content">Card Colors</h5>
+				</li>
+				<li class="lnav-bot-shadow"></li>
+				<li class="rdisp-top-shadow"></li>
+				<li class="rdisp-bot-shadow"></li>
+			</ul>
+			<div class="right-display-grid">
+				<ul class="right-display-row" id="right-display-row">
+					<li id="hidden-item"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="editor-footer">
+		</div>
+	</div>
+</body>
+</html>
