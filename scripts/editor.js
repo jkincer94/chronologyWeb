@@ -1,42 +1,31 @@
-function addNewCard() {
-	
-	var mainCardDesc = document.getElementById("input-text");
-	var desc = mainCardDesc.value;
-	
-	if(desc == ""){
-		return;
-	}
-	
-	var mainCardNum = document.getElementById("input-card-number");
-	var num = mainCardNum.innerText;
-	
-	mainCardNum.innerText++;
-	mainCardDesc.value = "";
-	
-	console.log("addNewCard();");
-	var newCard = document.createElement("LI");
-	newCard.className = "row-item";
+var cardCount = 0;
 
-	var cardShape = document.createElement("DIV");
-	cardShape.className = "card";	
+function editNewCard() {
+	console.log("editNewCard()");
+	var grayCard = document.getElementById("new-card-item");
+	grayCard.style.display = "none";
 	
-	var cardNumber = document.createElement("p");
-	cardNumber.className = "card-number";
-	var cardNumberText = document.createTextNode(num);
-	cardNumber.appendChild(cardNumberText);
-	cardShape.appendChild(cardNumber);
+	var editCard = document.createElement("LI"); //new list item
+	editCard.className = "edit-new-card";
 	
-	var cardDesc = document.createElement("p");
-	cardDesc.className = "card-description";
+	var cardNum = document.createElement("p"); //card num for new item
+	cardNum.className = "card-number";
+	var text = document.createTextNode(++cardCount);
+	cardNum.appendChild(text);
 	
-	var cardDescText = document.createTextNode(desc);
-	cardDesc.appendChild(cardDescText);
-	cardShape.appendChild(cardDesc);
+	var cardDesc = document.createElement("textarea"); //card desc for new item
+	cardDesc.className = "edit-card-text";
 	
-	newCard.appendChild(cardShape);
+	editCard.appendChild(cardNum);
+	editCard.appendChild(cardDesc);
 	
 	var list = document.getElementById("right-display-row");
-	list.insertBefore(newCard, list.childNodes[list.childNodes.length-1]);
+	list.insertBefore(editCard,list.childNodes[list.length]);
 	
-	newCard.scrollIntoView();
+	cardDesc.placeholder = "Enter Scene Description Here...";
+	cardDesc.focus();
+}
+
+function addNewCard() {
+	console.log("addNewCard()");
 }

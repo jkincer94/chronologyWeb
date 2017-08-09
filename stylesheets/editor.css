@@ -17,74 +17,52 @@ div#whole-container {
  }
  
  .editor-body {
-	height:500px;
+	height:480px;
 	width:800px;
 	background:lightgray:
  }
  
  .left-navigator {
-    height: 500px;
-    background:gray;
-    width: 250px;
+    height: 480px;
+    width: 100px;
     display: inline-block;
-    border-right: 1px solid black;
     position: relative;
+    background:#efefef;
     -webkit-padding-start: 0px;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
     list-style-type: none;
-    padding:0px 10px;
- }
- 
- .lnav-top-shadow {
-	height:8px;
-	width:250px;
-	position:absolute;
-	left:0px;
-	background:-webkit-linear-gradient(black,gray);
-	border-right:1px solid black;
- }
- 
- .lnav-bot-shadow {
-	height:8px;
-	width:250px;
-	position:absolute;
-	background:-webkit-linear-gradient(gray,black);
-	bottom:0px;
-	left:0px;
-	border-right:1px solid black;
  }
  
  .left-navigator-button {
-    height: 73px;
-    width: 73px;
+    height: 80px;
+    width: 79px;
     -webkit-margin-after: 0px;
-    background: #3a3a3a;
+    background: #2fa2bc;
     display: inline-block;
     -webkit-margin-before: 0px;
     box-sizing: initial;
+    border-right:1px solid #1a5e6d;
     text-align: center;
-    box-shadow: black 3px 3px 8px;
+    left:0px;
+	border-top:1px solid #1a5e6d;
+	border-radius:0px 5px 5px 0px;
+	cursor:pointer;
+ }
+ 
+ li#lnav-btn-top {
+	border-top:none;
+	border-radius:0px 0px 5px 0px;
+	color:white;
+	font-family:sans-serif;
+	line-height:80px;
+	font-weight:bold;
+	font-size:40px;
  }
  
  .left-navigator-button:hover {
-	height:71px; width:71px;
-	border:1px solid rgba(0,0,0,0);
-	box-shadow: black 1px 1px 5px;
+	background:gray;
  }
- 
- h5.lnav-btn-content {
-    position: absolute;
-    display: block;
-    width: 70px;
-    height: 73px;
-    color: white;
-    font-weight: bold;
-}
-
-h5.lnav-btn-content:hover {
-	color:yellow;
-}
  
 li#newCard-btn {
 	border-radius:15px 2px 2px 2px;
@@ -106,12 +84,9 @@ li#cardColor-btn {
 	border-radius:2px 2px 15px 2px;
 }
  
- 
- 
- 
  .right-display-grid {
-	height:500px;
-	width:550px;
+	height:480px;
+	width:700px;
 	display:inline-block;
 	background:#efefef;
 	position:absolute;
@@ -121,21 +96,21 @@ li#cardColor-btn {
  
  .rdisp-top-shadow {
 	height:8px;
-	width:550px;
+	width:700px;
 	position:absolute;
 	background:-webkit-linear-gradient(gray,rgba(0,0,0,0));
 	top:0px;
-	left:250px;
+	left:80px;
 	z-index:2;
  }
  
  .rdisp-bot-shadow {
 	height:8px;
-	width:550px;
+	width:700px;
 	position:absolute;
 	background:-webkit-linear-gradient(rgba(0,0,0,0),gray);
 	bottom:0px;
-	left:250px;
+	left:80px;
 	z-index:2;
  }
  
@@ -154,7 +129,8 @@ li#cardColor-btn {
 	box-shadow:1px 1px 5px gray;
 	padding:12px;
 	background:white;
-
+	vertical-align:top;
+	width:144px; height:192px;
  }
 
 li#hidden-item {
@@ -165,10 +141,22 @@ li#hidden-item {
 }
  
  .card {
-	height:190px;
-	width:135px;
+	height:168px;
+	width:120px;
 	display:inline-block;
  }
+ 
+li#new-card-item {
+    background: lightgray;
+    line-height: 60px;
+    font-family: sans-serif;
+    font-size: 100px;
+    padding: 4px;
+    color: gray;
+    text-align: right;
+    cursor:pointer;
+    box-shadow:3px 3px 5px gray;
+}
  
  .card-number {
 	-webkit-margin-before: 0px;
@@ -183,35 +171,20 @@ li#hidden-item {
     overflow-wrap:break-word;
  }
  
- .main-card {
-    display: block;
-    width: 159px;
-    bottom: 45px;
-    margin-left: 35px;
-    margin-top:50px;
-    border-radius: 8px;
-    box-shadow: black 1px 1px 5px;
-    padding: 12px;
-    background: white;
+ .edit-new-card {
+	display:inline-block;
+	margin-left:13px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-radius:8px;
+	box-shadow:1px 1px 5px gray;
+	padding:12px;
+	background:white;
+	vertical-align:top;
+	width:144px; height:192px;
  }
  
- .main-card-padding {
-	width:159px;
-	height:47px;
- }
- 
- input#input-card-number {
-	width:40%;
- }
- 
- p#input-card-number {
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    font-family:sans-serif;
-    font-weight:bold;
-}
- 
- textarea#input-text {
+ .edit-card-text {
 	width:100%;
 	margin-top:12px;
 	height:78%;
@@ -221,6 +194,8 @@ li#hidden-item {
  
  .editor-footer {
 	height:75px;
+	position:relative;
+	z-index:2;
 	width:800px;
 	background:#59e0ff;
 	border-radius:0px 0px 25px 25px;
