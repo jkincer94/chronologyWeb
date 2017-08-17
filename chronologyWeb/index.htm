@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Chronology</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="stylesheets/homepage.css">
+	<script type="./javascript" src="homepage.js"></script>
+</head>
+<body>
+	<div class="white-container">
+		<div class="content-container">
+			<div id="header" class="main-container">
+				<h1 id="header-title">Chronology</h1>
+				<h5 id="header-sub-title">Your outlines. Your style.</p>
+			</div>
+			<div id="page" class="main-container">
+				<div id="home-slideshow">
+					<div id="handOfCards-background" class="w3-content1 w3-section1">
+						<img class="mySlides w3-animate-right" src="images/handOfCards.jpg">
+						<img class="mySlides w3-animate-right" src="images/blankCardAndDeck.jpg">
+					</div>
+					<script>
+						var myIndex=0;
+						carousel();
+						function carousel() {
+							var i;
+							var x = 
+							document.getElementsByClassName("mySlides");
+							for (i = 0; i < x.length; i++)
+							{
+								x[i].style.display = "none";
+							}
+							myIndex++;
+							if(myIndex > x.length) {myIndex=1;}
+							x[myIndex-1].style.display = "block";
+							setTimeout(carousel,4000);
+						}
+					</script>
+					<div id="objective-container" class="img-background">
+						<h4 id="objective-title">Be an artist</h4>
+						<p id="objective-statement">Our mission is to provide the tools you need that will keep your creativity flowing. Create your own <b>Chronology Deck</b> to keep the events of your story organized and available in a stylized way.</p>
+						<div id="goToEditor-container">
+							<div class="toEditor-button" id="newProject-button" onclick="loadEditor()">
+								<h2 class="toEditor-button-text">Get Started</h2>
+							</div>
+							<script>
+								function loadEditor() {
+									window.open("./editor.htm");
+								}
+							</script>
+							<div class="toEditor-button" id="returnProject-button">
+								<h2 class="toEditor-button-text">Upload Project</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="footer" class="main-container"></div>
+		</div>
+	</div>
+</body>
+</html>

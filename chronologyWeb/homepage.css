@@ -1,0 +1,165 @@
+
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.white-container {
+	width: 920px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    padding: 10px;
+    border-radius: 25px 25px 25px 25px;
+    border: solid 1px white;
+}
+
+.content-container {
+	width:800px;
+	margin:0 auto;
+}
+
+.main-container {
+	width:800px;
+	height:auto;
+	margin:0 auto;
+}
+div#header {
+	background:#59e0ff;
+	height:auto;
+	color:white;
+	padding:12px 15px 12px 15px;
+	border-radius:25px 25px 0px 0px;
+	text-align:center;
+}
+
+h1#header-title {
+	font-family:quicksand;
+	font-weight:bold;
+	font-size:50px;
+	display:inline-block;
+	margin-top:0px;	
+	-webkit-margin-before:0px;
+	-webkit-margin-after:0px;
+	width:100%;
+}
+
+h5#header-sub-title {
+	display:block;
+	margin-top:0px;
+	-webkit-margin-before:0px;
+	-webkit-margin-after:0px;
+	font-family:quicksand;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	margin-left:3px;
+	margin-top:6px;
+}
+
+.mySlides.w3-animate-bottom {
+	height:330px;
+	border-radius:5px;
+}
+
+.w3-content1 {
+	height:330px;
+	width:auto;
+	overflow:hidden;
+	padding:10px;
+	padding-bottom:0px;
+	background:white;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+.w3-animate-right {
+	height:330px;
+	width:184px;
+}
+
+div#handOfCards-background {
+	margin-top:0px;
+	display:inline-block;
+}
+
+div#objective-container {
+	display:inline-block;
+	position:absolute;
+	width:549.05px;
+	padding:10px 30px;
+	padding-bottom:0px;
+}
+
+h4#objective-title {
+	font-family:quicksand;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-top:25px;
+}
+
+p#objective-statement {
+	font-family:quicksand;
+	text-align:justify;
+	//padding-right:20px;
+}
+
+div#goToEditor-container {
+	margin-top:70px;
+	margin-bottom:40px;
+	width:100%;
+}
+
+.toEditor-button {
+	display:inline-block;
+	background:#ff59f6;
+	background:-webkit-linear-gradient(#ff59f6,#b700ae);
+	width:225px;
+	height:75px;
+	border-radius:5px;
+	box-shadow:gray 1px 1px 5px;
+	color:white;
+}
+
+.toEditor-button:hover{
+	color:yellow;
+	border:1px solid pink;
+	height:73px; width:223px;
+}
+
+.toEditor-button-text {
+	width:100%;
+	text-align:center;
+	font-family:quicksand;
+	font-weight:bold;
+	font-size:25px;
+	top:0px;
+	line-height:75px;
+	margin:0;
+	
+}
+
+div#newProject-button {
+	margin-left:25px;
+}
+
+div#returnProject-button {
+	right:60px;
+	position:absolute;
+}
+
+div#footer {
+	background:#59e0ff;
+	height:50px;
+	color:white;
+	padding:12px 0px 12px 15px;
+	border-radius:0px 0px 25px 25px;
+}
+
+*, *:before, *:after {
+	box-sizing:initial;
+}
+

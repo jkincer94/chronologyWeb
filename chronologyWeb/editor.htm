@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="stylesheets/editor.css">
+</head>
+<body>
+	<script src="scripts/editor.js"></script>
+	<div id="whole-container">
+		<div class="editor-header">
+		</div>
+		<div class="editor-body">
+			<ul class="left-navigator" id="left-navigator">
+				<li class="rdisp-top-shadow"></li>
+				<li class="left-navigator-button" id="lnav-btn-top">Aa</li>
+				<li class="left-navigator-button"></li>
+				<li class="left-navigator-button"></li>
+				<li class="left-navigator-button"></li>
+				<li class="left-navigator-button"></li>
+				<li class="left-navigator-button"></li>
+				<li class="rdisp-bot-shadow"></li>
+			</ul>
+			<div class="right-display-grid">
+				<ul class="right-display-row" id="right-display-row">
+					<li class="row-item" id="last-item">
+						<p class="card-number">1</p>
+						<textarea id="last-item-textarea" class="edit-card-text" placeholder="Enter scene description here..." onkeypress="editorKeyMap(event)"></textarea>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="editor-footer">
+		</div>
+	</div>
+</body>
+</html>

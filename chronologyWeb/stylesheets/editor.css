@@ -1,0 +1,214 @@
+body {
+	font-family:none;
+}
+
+div#whole-container {
+	width:800px;
+	height:auto;
+	margin:0 auto;
+	margin-top:10px;
+ }
+ 
+ .editor-header {
+	width:800px;
+	height:150px;
+	background:#59e0ff;
+	border-radius:25px 25px 0px 0px;
+ }
+ 
+ .editor-body {
+	height:480px;
+	width:800px;
+	background:lightgray:
+ }
+ 
+ .left-navigator {
+    height: 480px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    background:#efefef;
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    list-style-type: none;
+ }
+ 
+ .left-navigator-button {
+    height: 80px;
+    width: 79px;
+    -webkit-margin-after: 0px;
+    background: #2fa2bc;
+    display: inline-block;
+    -webkit-margin-before: 0px;
+    box-sizing: initial;
+    border-right:1px solid #1a5e6d;
+    text-align: center;
+    left:0px;
+	border-top:1px solid #1a5e6d;
+	border-radius:0px 5px 5px 0px;
+	cursor:pointer;
+ }
+ 
+ li#lnav-btn-top {
+	border-top:none;
+	border-radius:0px 0px 5px 0px;
+	color:white;
+	font-family:sans-serif;
+	line-height:80px;
+	font-weight:bold;
+	font-size:40px;
+ }
+ 
+ .left-navigator-button:hover {
+	background:gray;
+ }
+ 
+li#newCard-btn {
+	border-radius:15px 2px 2px 2px;
+}
+
+li#editCard-btn {
+	border-radius:2px;
+}
+li#delCard-btn {
+	border-radius:2px 15px 2px 2px;
+}
+li#fontType-btn {
+	border-radius:2px 2px 2px 15px;
+}
+li#fontColor-btn {
+	border-radius:2px;
+}
+li#cardColor-btn {
+	border-radius:2px 2px 15px 2px;
+}
+ 
+ .right-display-grid {
+	height:480px;
+	width:700px;
+	display:inline-block;
+	background:#efefef;
+	position:absolute;
+	overflow-y:scroll;
+	overflow-x:hide;
+ }
+ 
+ .rdisp-top-shadow {
+	height:8px;
+	width:700px;
+	position:absolute;
+	background:-webkit-linear-gradient(gray,rgba(0,0,0,0));
+	top:0px;
+	left:80px;
+	z-index:2;
+ }
+ 
+ .rdisp-bot-shadow {
+	height:8px;
+	width:700px;
+	position:absolute;
+	background:-webkit-linear-gradient(rgba(0,0,0,0),gray);
+	bottom:0px;
+	left:80px;
+	z-index:2;
+ }
+ 
+ .right-display-row {
+	height:485px;
+	list-style-type:none;
+	-webkit-padding-start: 0;
+ }
+ 
+ .row-item {
+    display: inline-block;
+    margin-left: 13px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px grey;
+    background: white;
+    vertical-align: top;
+    width: 1.5in;
+    height: 2.1in;
+}
+
+li#hidden-item {
+    height: 2px;
+    position: absolute;
+    width: 550px;
+    bottom: 0px;
+}
+ 
+ .card {
+	height:168px;
+	width:120px;
+	display:inline-block;
+ }
+ 
+ li#last-item {
+ }
+ 
+li#new-card-item {
+    background: lightgray;
+    line-height: 60px;
+    font-family: sans-serif;
+    margin-left:9px;
+    font-size: 100px;
+    padding: 4px;
+    color: gray;
+    text-align: right;
+    cursor:pointer;
+    box-shadow:1px 1px 5px gray;
+}
+ 
+.card-number {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: .1in 0 0 .15in;
+    height: 15%;
+}
+ 
+ .card-description {
+    font-family: sans-serif;
+    font-weight: bold;
+    overflow-wrap:break-word;
+ }
+ 
+ .edit-new-card {
+	display:inline-block;
+	margin-left:9px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-radius:8px;
+	box-shadow:1px 1px 5px gray;
+	padding:12px;
+	background:white;
+	vertical-align:top;
+	width:144px; height:192px;
+ }
+ 
+.edit-card-text {
+    width: 100%;
+    height: 85%;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: .1in .15in .1in .15in;
+}
+ 
+ .edit-card-text:focus {
+	outline:none !important;
+ }
+ 
+ .editor-footer {
+	height:75px;
+	position:relative;
+	z-index:2;
+	width:800px;
+	background:#59e0ff;
+	border-radius:0px 0px 25px 25px;
+ }
